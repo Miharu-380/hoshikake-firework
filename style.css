@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.pc {
+  display: block;
+}
+.position-relative {
+  position: relative;
+}
+.flex {
+  display: flex;
+}
+.justify-content {
+  justify-content: space-between;
+}
+
+/* header */
+.header-scroll {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 5px 0;
+  width: 100%;
+  height: 80px;
+  z-index: 10000;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.header-scroll li {
+  text-align: center;
+  margin-right: 30px;
+  list-style: none;
+  line-height: 12pt;
+}
+
+.header-scroll li span {
+  font-size: 10px;
+}
+/* fv */
+.fv {
+  background-image: url(images/firework.jpeg);
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
