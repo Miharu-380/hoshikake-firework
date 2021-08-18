@@ -9,6 +9,15 @@ body {
   color: #fff;
   background-color: #0a1f33;
 }
+section {
+  margin: 0 15% 180px;
+}
+a {
+  text-decoration: none;
+}
+a:link, a:visited, a:hover, a:active {
+  color: #000;
+}
 .pc {
   display: block;
 }
@@ -18,8 +27,14 @@ body {
 .flex {
   display: flex;
 }
+.block {
+  display: block;
+}
 .justify-content {
   justify-content: space-between;
+}
+.text-align {
+  text-align: center;
 }
 .border {
   width: 2.5rem;
@@ -31,7 +46,14 @@ body {
   font-size: 1.5rem;
 }
 .english-title {
-  margin-top: .5rem;
+  margin-top: .3rem;
+  margin-bottom: 50px;
+  font-size: .9rem;
+}
+.more {
+  background-color: #f9a11b;
+  border-radius: 30px;
+  padding: 15px;
 }
 
 /* header */
@@ -47,14 +69,12 @@ body {
   align-items: center;
   padding: 0 20px;
 }
-
 .header-scroll li {
   text-align: center;
   margin-right: 30px;
   list-style: none;
   line-height: 12pt;
 }
-
 .header-scroll li span {
   font-size: 10px;
 }
@@ -69,18 +89,23 @@ body {
   align-items: center;
   justify-content: center;
 }
-
-/* program */
-#program {
-  text-align: center;
-}
-
+/* date */
 .daytime {
-  margin: 50px auto 20px;
+  margin-bottom: 20px;
   font-size: 3rem;
 }
-
 .red {
   display: inline-block;
   color: red;
+}
+/* program */
+.menu-img {
+  background-image: url(images/menu-firework.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  height: 70vh
+}
+.program-menu {
+  align-items: center;
 }
