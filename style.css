@@ -3,14 +3,16 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Sawarabi Mincho", 'Noto Sans JP', sans-serif;
-  letter-spacing: 0.2rem
+  letter-spacing: 0.2rem;
+  line-height: 1.5rem;
 }
 body {
   color: #fff;
   background-color: #0a1f33;
 }
 section {
-  margin: 0 15% 180px;
+  margin: 50px 15% 100px;
+  overflow: hidden;
 }
 a {
   text-decoration: none;
@@ -39,7 +41,7 @@ a:link, a:visited, a:hover, a:active {
 .border {
   width: 2.5rem;
   border-top: 1px solid;
-  margin: 0 auto;
+  margin: 5px auto 0;
 }
 .section-title {
   margin-top: 40px;
@@ -50,10 +52,47 @@ a:link, a:visited, a:hover, a:active {
   margin-bottom: 50px;
   font-size: .9rem;
 }
+.image {
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: 50%;
+  height: 50vh;
+  border-radius: 5%;;
+}
 .more {
   background-color: #f9a11b;
   border-radius: 30px;
-  padding: 15px;
+  padding: 20px;
+}
+.back-opacity {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.back-opacity-info {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* motion */
+.slide-l {
+  -webkit-transition: all 1.5s;
+  -webkit-transform: translate(0, 0);
+  opacity: 1;
+}
+.slide-r {
+  -webkit-transition: all 1.5s;
+  -webkit-transform: translate(0, 0);
+  opacity: 1;
+}
+.slide-l.move {
+  -webkit-transform: translate(-20px, 0);
+  opacity: 0;
+}
+.slide-r.move {
+  -webkit-transform: translate(20px, 0);
+  opacity: 0;
+}
+.delay {
+  transition-delay: .3s;
 }
 
 /* header */
@@ -101,11 +140,38 @@ a:link, a:visited, a:hover, a:active {
 /* program */
 .menu-img {
   background-image: url(images/menu-firework.jpg);
-  background-position: center;
-  background-size: cover;
-  width: 50%;
-  height: 70vh
 }
 .program-menu {
   align-items: center;
 }
+
+/* cruise */
+.black {
+  color: #000;
+  padding: 50px;
+}
+.cruise-back {
+  background-image: url(images/firework-people.jpg); */
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  z-index: -1;
+}
+.cruise-img {
+  background-image: url(images/cruise.jpg);
+}
+.cruise-more {
+  margin: 60px auto;
+}
+.cruise-title {
+  font-size: 1.3rem;
+  margin-bottom: 50px;
+}
+.price {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+.under {
+  border-bottom: dashed 3px #0a1f33;
+}
+
