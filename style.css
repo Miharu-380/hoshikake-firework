@@ -20,6 +20,26 @@ a {
 a:link, a:visited, a:hover, a:active {
   color: #000;
 }
+/* background image */
+.b-fw1 {
+  background-image: url(images/firework-logo-blue.png);
+  background-position: 100% 550px;
+	background-repeat: no-repeat;
+  background-size: 30% auto;
+}
+.b-fw2 {
+  background-image: url(images/firework-logo-blue.png);
+  background-position: -20% 1000px;
+	background-repeat: no-repeat;
+  background-size: 50% auto;
+}
+.b-fw3 {
+  background-image: url(images/firework-logo-blue.png);
+  background-position: 90% 1500px;
+	background-repeat: no-repeat;
+  background-size: 30% auto;
+}
+/* base */
 .pc {
   display: block;
 }
@@ -71,7 +91,6 @@ a:link, a:visited, a:hover, a:active {
 .back-opacity-info {
   background-color: rgba(255, 255, 255, 0.5);
 }
-
 /* motion */
 .slide-l {
   -webkit-transition: all 1.5s;
@@ -144,7 +163,6 @@ a:link, a:visited, a:hover, a:active {
 .program-menu {
   align-items: center;
 }
-
 /* cruise */
 .black {
   color: #000;
