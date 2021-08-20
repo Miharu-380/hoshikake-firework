@@ -10,15 +10,15 @@
 </head>
 <body>
   <div class="b-fw1"><div class="b-fw2"><div class="b-fw3">
-  <header class="pc position-relative">
+  <header class="block position-relative">
     <div class="header-scroll flex justify-content" id="header-scroll">
       <div class="logo-s"><img src="images/hoshikake-logo-s.png" alt="ロゴ" title="星駆花火大会" width="197" height="30"></div>
-      <ul class="flex">
-        <li>プログラム<br><span>Program</span></li>
-        <li>クルーズ<br><span>Cruise</span></li>
-        <li>アクセス<br><span>Access</span></li>
-        <li>宿泊<br><span>Hotel</span></li>
-      </ul>
+      <nav class="flex">
+        <a href="#program"><p class="header-menu">プログラム<br><span>Program</span></p></a>
+        <a href="#cruise"></a><p class="header-menu">クルーズ<br><span>Cruise</span></p>
+        <a href="#access"></a><p class="header-menu">アクセス<br><span>Access</span></p>
+        <a href="#hotel"></a><p class="header-menu">宿泊<br><span>Hotel</span></p>
+      </nav>
     </div>
   </header>
   <!-- fv -->
@@ -28,13 +28,13 @@
   <!-- new -->
   <section id="new" class="text-align">
     <div class="section-title">最新情報<div class="border"></div></div><p class="english-title">New</p>
-    <p class="cancel"><div class="red">※</div>雨天中止。中止の場合は、当日15:00までにお知らせします。</p>
+    <div class="cancel"><div class="red">※</div>雨天中止。中止の場合は、当日15:00までにお知らせします。</div>
   </section>
   <!-- date -->
   <section id="date" class="text-align">
     <div class="section-title">開催日時<div class="border"></div></div><p class="english-title">Date</p>
     <div class="daytime">8月29日（日）19:00 〜 21:00</div>
-    <p class="cancel"><div class="red">※</div>雨天中止。中止の場合は、当日15:00までにお知らせします。</p>
+    <div class="cancel slide-up delay"><div class="red">※</div>雨天中止。中止の場合は、当日15:00までにお知らせします。</div>
   </section>
   <!-- program -->
   <section id="program">
@@ -55,7 +55,7 @@
           </p>
           <div class="cruise-img image slide-r"></div>
         </div>
-        <div class="cruise-more text-align back-opacity-info black">
+        <div class="cruise-more text-align back-opacity-info black slide-up">
           <p class="cruise-title"><span class="under">- 船の上から満喫！クルーズコース -</span></p>
           <p class="price">料金：3000円(税抜)</p>
           <br><a class="more" href="#">詳しくはこちら</a>
@@ -63,11 +63,22 @@
       </section>
     </div>
   </div>
-  <section id="program">
-    <div class="section-title text-align">プログラム<div class="border"></div></div><p class="english-title text-align">Program</p>
+  <section id="access">
+    <div class="section-title text-align">アクセス<div class="border"></div></div><p class="english-title text-align">Access</p>
     <div class="program-menu flex justify-content">
-      <div class="menu-img image slide-l"></div>
-      <p class="firework-program slide-r delay">2時間で2万発の花火を、<br>みんなの想いを込めて打ち上げます。<br><br><br><br><a class="more" href="#">詳しくはこちら</a></p>
+      <div class="access-img image slide-l">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8170.972274989973!2d133.5315666976585!3d34.39167061008065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35516d1afdb6a7e1%3A0xe2462100e8a7a83e!2z6YeR5YiA5q-U576F5a6u!5e0!3m2!1sja!2sjp!4v1629423393243!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <p class="firework-program slide-r delay">
+        〒714-0301<br>岡山県笠岡市北木島星駆町◯◯-◯<br><br>
+        フェリーをご利用ください<br><br><br><br>
+        <a class="more" href="#">詳しくはこちら</a>
+      </p>
+      <!-- <div class="access-info slide-r delay">
+        <p class="firework-access">〒714-0301<br>岡山県笠岡市北木島星駆町◯◯-◯</p>
+        <p class="dots">フェリーをご利用ください</p>
+        <p class="more-button"><a class="more" href="#">詳しくはこちら</a></p>
+      </div> -->
     </div>
   </section>
   </div></div></div>

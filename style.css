@@ -18,7 +18,7 @@ a {
   text-decoration: none;
 }
 a:link, a:visited, a:hover, a:active {
-  color: #000;
+  color: #fff;
 }
 /* background image */
 .b-fw1 {
@@ -39,18 +39,22 @@ a:link, a:visited, a:hover, a:active {
 	background-repeat: no-repeat;
   background-size: 30% auto;
 }
-/* base */
-.pc {
-  display: block;
-}
-.position-relative {
-  position: relative;
-}
+/* =====
+   base!
+   ===== */
+/* display */
 .flex {
   display: flex;
 }
 .block {
   display: block;
+}
+.cancel {
+  display: inline;
+}
+/* position */
+.position-relative {
+  position: relative;
 }
 .justify-content {
   justify-content: space-between;
@@ -58,10 +62,22 @@ a:link, a:visited, a:hover, a:active {
 .text-align {
   text-align: center;
 }
+.more-button {
+  margin: 80px auto;
+}
+/* border */
 .border {
   width: 2.5rem;
   border-top: 1px solid;
   margin: 5px auto 0;
+}
+.under {
+  border-bottom: dashed 3px #0a1f33;
+}
+.dots {
+  display: inline;
+  width: 15rem;
+  border-bottom: dotted 3px;
 }
 .section-title {
   margin-top: 40px;
@@ -85,11 +101,16 @@ a:link, a:visited, a:hover, a:active {
   border-radius: 30px;
   padding: 20px;
 }
+.red {
+  display: inline;
+  color: red;
+}
+/* background */
 .back-opacity {
   background-color: rgba(255, 255, 255, 0.2);
 }
 .back-opacity-info {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 /* motion */
 .slide-l {
@@ -102,12 +123,25 @@ a:link, a:visited, a:hover, a:active {
   -webkit-transform: translate(0, 0);
   opacity: 1;
 }
+.slide-up {
+  -webkit-transition: all 1.5s;
+  -webkit-transform: translate(0, 0);
+  opacity: 1;
+}
 .slide-l.move {
   -webkit-transform: translate(-20px, 0);
   opacity: 0;
 }
 .slide-r.move {
   -webkit-transform: translate(20px, 0);
+  opacity: 0;
+}
+.slide-l.move {
+  -webkit-transform: translate(-20px, 0);
+  opacity: 0;
+}
+.slide-up.move {
+  -webkit-transform: translate(0, -20px);
   opacity: 0;
 }
 .delay {
@@ -127,20 +161,19 @@ a:link, a:visited, a:hover, a:active {
   align-items: center;
   padding: 0 20px;
 }
-.header-scroll li {
+.header-menu {
   text-align: center;
   margin-right: 30px;
   list-style: none;
-  line-height: 12pt;
 }
-.header-scroll li span {
+.header-scroll  span {
   font-size: 10px;
 }
 /* fv */
 .fv {
   background-image: url(images/firework.jpeg);
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -151,10 +184,6 @@ a:link, a:visited, a:hover, a:active {
 .daytime {
   margin-bottom: 20px;
   font-size: 3rem;
-}
-.red {
-  display: inline-block;
-  color: red;
 }
 /* program */
 .menu-img {
@@ -189,7 +218,10 @@ a:link, a:visited, a:hover, a:active {
   font-size: 1.3rem;
   margin-bottom: 30px;
 }
-.under {
-  border-bottom: dashed 3px #0a1f33;
+/* access */
+.firework-access {
+  margin-bottom: 20px;
 }
-
+.access-info {
+  align-items: center;     /*上下中央揃え*/
+}
