@@ -233,9 +233,23 @@ a:link, a:visited, a:hover, a:active {
   padding: 60px;
   margin: 40px auto;
 }
+.ferry-title {
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+}
 .access-menu-t {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
+  align-items: center;
 }
 .access-menu-b {
-
+  align-items: center;
+}
+.ferry-info {
+  color: #000;
+}
+.ferry-name {
+  color: #022B7B
+}
+.ferry-more-button {
+  margin-top: 60px;
 }
