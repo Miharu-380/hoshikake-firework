@@ -209,13 +209,14 @@ a:link, a:visited, a:hover, a:active {
 }
 .cruise-more {
   margin: 60px auto;
+  padding: 60px 60px 70px;
 }
 .cruise-title {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-bottom: 50px;
 }
 .price {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-bottom: 30px;
 }
 /* access */
@@ -223,5 +224,18 @@ a:link, a:visited, a:hover, a:active {
   margin-bottom: 20px;
 }
 .access-info {
-  align-items: center;     /*上下中央揃え*/
+  align-items: center;
+}
+.address {
+  font-size: 1.2rem;
+}
+.ferry-more {
+  padding: 60px;
+  margin: 40px auto;
+}
+.access-menu-t {
+  margin-bottom: 100px;
+}
+.access-menu-b {
+
 }
