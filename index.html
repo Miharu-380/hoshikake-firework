@@ -10,7 +10,7 @@
   <link rel="icon" type="image/x-icon" href="images/firework-logo-white-2.png">
 </head>
 <body>
-  <header class="block position-relative">
+  <header class="pc position-relative">
     <div class="header-scroll flex justify-content" id="header-scroll">
       <div class="logo-s"><img src="images/hoshikake-logo-s.png" alt="ロゴ" title="星駆花火大会" width="197" height="30"></div>
       <nav class="flex">
@@ -22,25 +22,47 @@
       </nav>
     </div>
   </header>
+  <header class="sp">
+    <div class="nav-area">
+      <div class="menu-trigger" href="">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#program"><p class="header-menu">本大会について</p></a></li>
+          <li><a href="#cruise"><p class="header-menu">クルーズ</p></a></li>
+          <li><a href="#access"><p class="header-menu">アクセス</p></a></li>
+          <li><a href="#manners"><p class="header-menu">お願い</p></a></li>
+          <li><a href="#tourism"><p class="header-menu">観光情報</p></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
   <!-- backgroud image -->
   <div class="b-fw1"><div class="b-fw2"><div class="b-fw3"><div class="b-fw4"><div class="b-fw5">
   <main>
     <!-- fv -->
     <div class="fv">
       <div class="slide">
-        <img src="images/fv.jpeg" alt="ロゴ" title="星駆花火大会" width="100%">
-        <img src="images/fv-2.jpg" alt="ロゴ" title="星駆花火大会" width="100%">
-        <img src="images/fv-3.jpg" alt="ロゴ" title="星駆花火大会" width="100%">
-        <img src="images/fv-4.jpg" alt="ロゴ" title="星駆花火大会" width="100%">
+        <img src="images/fv.jpeg" alt="スライド" title="星駆花火大会" width="100%">
+        <img src="images/fv-2.jpg" alt="スライド" title="星駆花火大会" width="100%">
+        <img src="images/fv-3.jpg" alt="スライド" title="星駆花火大会" width="100%">
+        <img src="images/fv-4.jpg" alt="スライド" title="星駆花火大会" width="100%">
       </div>
-      <div class="logo">
+      <div class="logo pc">
         <img src="images/hoshikake-logo.png" alt="ロゴ" title="星駆花火大会">
       </div>
+      <div class="sp-logo sp">
+        <img src="images/sp-logo.png" alt="ロゴ" title="星駆花火大会">
+      </div>
+      <div class="scrolldown"><span>Scroll</span></div>
     </div>
     <!-- date -->
     <section id="date" class="text-align">
       <div class="section-title">開催日時<div class="border"></div></div><p class="english-title">Date</p>
-      <div class="daytime">8月29日（日）19:00 〜 21:00</div>
+      <span class="daytime">8月29日（日）<br>19:00 〜 21:00</span><br><br>
       <div class="cancel slide-up delay"><span class="red">※</span>雨天中止。中止の場合は、当日15:00までにお知らせします。</div>
     </section>
     <!-- new -->
@@ -60,15 +82,13 @@
     <!-- program -->
     <section id="program">
       <div class="section-title text-align">星駆町の花火<div class="border"></div></div><p class="english-title text-align">About Hoshikake</p>
-      <div class="program-menu flex justify-content">
+      <div class="align-items content">
         <div class="menu-img image slide-l"></div>
-        <p class="firework-program slide-r delay">
-          北木島の美しい海を<br>
-          背景にして行われる花火大会。<br><br>
-          次々に打上げられる花火は20000発。<br><br>
-          １夜限りの美しい花と<span class="hoshi">星</span>で染まる夜空を<br>
-          どうぞお楽しみください。<br>
-        </p>
+        <span class="firework-program slide-r delay">
+          北木島の美しい海を背景にして行われる、北木島唯一の花火大会。<br>
+          次々に打上げられる花火は20000発。<br>
+          一夜限りの美しい花と<span class="hoshi">星</span>で染まる夜を、どうぞお楽しみください。<br>
+        </span>
       </div>
     </section>
     <!-- cruise -->
@@ -76,18 +96,19 @@
       <div class="back-opacity">
         <section id="cruise">
           <div class="section-title text-align">クルーズ<div class="border"></div></div><p class="english-title text-align">Cruise</p>
-          <div class="program-menu flex justify-content">
+          <div class="align-items content-reverse">
             <div class="firework-cruise">
-              <p class="back-opacity-info black slide-l delay">たくさんの花火に囲まれて、<br>幸せなひと時を。</p>
+              <p class="back-opacity-info black slide-l delay">たくさんの花火に囲まれて、幸せなひと時を。</p>
             </div>
             <div class="cruise-img image slide-r"></div>
           </div>
           <div class="cruise-more text-align back-opacity-info black slide-up">
-            <p class="cruise-title"><span class="under">- 船の上から満喫！クルーズコース -</span></p>
+            <p class="cruise-title pc"><span class="under">- 船の上から満喫！クルーズコース -</span></p>
+            <p class="cruise-title sp"><span class="under">船の上から満喫！<br>クルーズコース</span></p>
             <p class="firework-access slide-r delay">
             <p>”花火に囲まれる”景色を。</p><br>
             <p class="price">料金：3000円(税抜)</p>
-            <br><span><a class="more button" href="#">詳しくはこちら</a></span>
+            <p class="more button"><a href="#">詳しくはこちら</a></p>
           </div>
         </section>
       </div>
@@ -95,13 +116,13 @@
     <!-- access -->
     <section id="access">
       <div class="section-title text-align">アクセス<div class="border"></div></div><p class="english-title text-align">Access</p>
-      <div class="program-menu flex justify-content">
+      <div class="align-items flex justify-content">
         <div class="access-img image slide-l">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26341.323294494607!2d133.52070822079108!3d34.384429219922986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35516dbe396e07d5%3A0x701e85394f296eb4!2z5YyX5pyo5bO2!5e0!3m2!1sja!2sjp!4v1629456458311!5m2!1sja!2sjp" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <p class="firework-access slide-r delay">
           <span class="address">〒714-0301<br>岡山県笠岡市北木島星駆町◯◯-◯</span><br><br><br>
-          会場周辺には駐車場もご用意しております（80台)<br><br><br><br>
+          会場周辺には<br>駐車場もご用意しております（80台)<br><br><br><br>
           <br><a class="more button" href="#">詳しくはこちら</a>
         </p>
       </div>
@@ -139,7 +160,7 @@
     <!-- manners -->
     <section id="manners" class="section-b">
       <div class="section-title text-align">観覧時のお願い<div class="border"></div></div><p class="english-title text-align">Manners</p>
-      <div class="manners　program-menu flex justify-content">
+      <div class="manners　align-items flex justify-content">
         <div class="slide-l"><img src="images/manners-mask.png" alt="ウイルス感染予防のお願い" title="観覧時のお願い"></div>
         <p class="firework-program slide-r delay">
           新型コロナウイルスの感染予防対策に伴い<br>
@@ -153,7 +174,7 @@
     <!-- tourism -->
     <section id="tourism" class="section-b">
       <div class="section-title text-align">観光情報<div class="border"></div></div><p class="english-title text-align">Tourism</p>
-      <div class="program-menu flex justify-content">
+      <div class="align-items flex justify-content">
         <div class="firework-cruise slide-l delay">
           <p class="back-opacity-info black slide-l delay">笠岡で、ゆっくり過ごす。</p>
         </div>
@@ -162,7 +183,7 @@
     </section>
     <!-- information -->
     <div id="information" class="back-opacity">
-      <div class="program-menu info-size flex justify-content">
+      <div class="align-items info-size flex justify-content">
         <div class="info-p">
           <p>
             星駆町の花火 / クルーズ　/ アクセス　/ 観覧時のお願い / 観光情報<br><br>
