@@ -5,6 +5,7 @@
   font-family: "Sawarabi Mincho", 'Noto Sans JP', sans-serif;
   letter-spacing: 0.2rem;
   line-height: 1.5rem;
+  font-size: 1rem;
 }
 body {
   color: #fff;
@@ -25,6 +26,9 @@ footer {
   padding: 9px;
   text-align: center;
   align-items: center;
+  font-size: 0.5rem;
+}
+footer p {
   font-size: 0.5rem;
 }
 
@@ -162,6 +166,7 @@ footer {
   height: 2px;
   width: 0;
   background: #28527a;
+  color: #000;
 }
 .button:after{
   right: inherit;
@@ -271,6 +276,50 @@ footer {
 .slide img:nth-child(2) { animation-delay: 4s; }
 .slide img:nth-child(3) { animation-delay: 8s; }
 .slide img:nth-child(4) { animation-delay: 12s; }
+/* スクロール促進 */
+.scrolldown{
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  height: 50px;
+}
+.scrolldown span{
+  position: relative;
+  top: -50%;
+  left: -50%;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+/* 線の描写 */
+.scrolldown::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 30px;
+  background: #fff;
+  animation: pathmove 1.4s ease-in-out infinite;
+  opacity:0;
+}
+@keyframes pathmove{
+  0%{
+    height:0;
+    top:0;
+    opacity: 0;
+  }
+  50%{
+    height: 30px;
+    opacity: 1;
+  }
+  100%{
+    height: 0;
+    top: 50px;
+    opacity: 0;
+  }
+}
 /* date */
 .daytime {
   margin-bottom: 20px;
@@ -330,12 +379,16 @@ footer {
 /* access */
 .firework-access {
   margin-bottom: 20px;
+  width: 40%;
 }
 .access-info {
   align-items: center;
 }
 .address {
   font-size: 1.2rem;
+}
+.access-address{
+  margin-bottom: 60px;
 }
 .ferry-more {
   padding: 60px;
@@ -383,61 +436,9 @@ footer {
 .info-logo {
   align-items: center;
 }
-.info-p {
+.info-p span {
   font-size: 0.8rem;
 }
-
-
-.scrolldown{
-  position: absolute;
-  left: 50%;
-  bottom: 20px;
-  height: 50px;
-}
-.scrolldown span{
-  position: relative;
-  top: -50%;
-  left: -50%;
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: bold;
-  letter-spacing: 0.05em;
-}
-
-/* 線の描写 */
-.scrolldown::after{
-  content: "";
-    /*描画位置*/
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 2px;
-  height: 30px;
-  background: #fff;
-  animation: pathmove 1.4s ease-in-out infinite;
-  opacity:0;
-}
-
-/*高さ・位置・透過が変化して線が上から下に動く*/
-@keyframes pathmove{
-  0%{
-    height:0;
-    top:0;
-    opacity: 0;
-  }
-  50%{
-    height: 30px;
-    opacity: 1;
-  }
-  100%{
-    height: 0;
-    top: 50px;
-    opacity: 0;
-  }
-}
-
-
-
 
 
 @media screen and (max-width: 599px) {
@@ -578,6 +579,52 @@ footer {
   }
   .cruise-title {
     line-height: 2rem;
+  }
+
+  /* access */
+  .firework-access {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .address {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+  .ferry-info {
+    margin-bottom: 20px;
+  }
+  .timemoney {
+    font-size: 0.9rem;
+  }
+  .ferry-more-button {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  .access-menu-t {
+    margin-bottom: 20px;
+  }
+
+  /* manners */
+  .virus {
+    margin-bottom: 20px;
+  }
+  .section-b {
+    margin: 50px 5% 100px;
+  }
+
+  /* tourism */
+  .tourism {
+    margin-bottom: 20px;
+  }
+
+  /* information */
+  #information {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  .info-logo {
+    display: flex;
+    justify-content: space-between;
   }
 
 }
