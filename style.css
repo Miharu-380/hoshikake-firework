@@ -593,6 +593,9 @@ footer p {
   .ferry-info {
     margin-bottom: 20px;
   }
+  .adjacent {
+    margin-left: 30px;
+  }
   .timemoney {
     font-size: 0.9rem;
   }
@@ -622,4 +625,11 @@ footer p {
     justify-content: space-between;
   }
 
+}
+
+
+@media screen and (max-width: 599px) {
+  .adjacent {
+    margin-left: 0;
+  }
 }
