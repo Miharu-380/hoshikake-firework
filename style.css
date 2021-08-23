@@ -363,7 +363,7 @@ footer p {
 }
 .cruise-more {
   margin: 60px auto;
-  padding: 60px 60px 70px;
+  padding: 60px 60px 80px;
 }
 .cruise-title {
   font-size: 1.2rem;
@@ -386,10 +386,6 @@ footer p {
 }
 .access-address{
   margin-bottom: 60px;
-}
-.ferry-more {
-  padding: 60px;
-  margin: 40px auto;
 }
 .ferry-title {
   font-size: 1.3rem;
@@ -580,6 +576,7 @@ footer p {
   }
   .cruise-more {
     padding: 40px;
+    padding: 40px 40px 60px;
   }
   .cruise-title {
     line-height: 2rem;
