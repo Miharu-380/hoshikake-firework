@@ -122,6 +122,9 @@ footer p {
   margin-bottom: 50px;
   font-size: .9rem;
 }
+.firework-program {
+  width: 40%;
+}
 .image {
   background-position: center;
   background-size: cover;
@@ -343,7 +346,7 @@ footer p {
 .menu-img {
   background-image: url(images/menu-firework.jpg);
 }
-.firework-program {
+.firework-content {
   width: 40%;
 }
 /* cruise */
@@ -467,6 +470,9 @@ footer p {
     flex-wrap: wrap-reverse;
     justify-content: center;
   }
+  .firework-program {
+    width: 100%;
+  }
   .image {
     width: 100%;
     height: 30vh;
@@ -564,8 +570,8 @@ footer p {
     margin-right: 0;
   }
   /* program */
-  .firework-program {
-    width: 100%;
+  .firework-content {
+    width: auto;
   }
   /* cruise */
   .firework-cruise {
@@ -624,7 +630,6 @@ footer p {
     display: flex;
     justify-content: space-between;
   }
-
 }
 
 
