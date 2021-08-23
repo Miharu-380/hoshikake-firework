@@ -11,7 +11,7 @@
 </head>
 <body>
   <header class="pc position-relative">
-    <div class="header-scroll flex justify-content" id="header-scroll">
+    <div class="header-scroll content" id="header-scroll">
       <div class="logo-s"><img src="images/hoshikake-logo-s.png" alt="ロゴ" title="星駆花火大会" width="197" height="30"></div>
       <nav class="flex">
         <a href="#program"><p class="header-menu">本大会について<br><span>About</span></p></a>
@@ -102,7 +102,7 @@
         <section id="cruise">
           <div class="section-title text-align">クルーズ<div class="border"></div></div><p class="english-title text-align">Cruise</p>
           <div class="align-items content-reverse">
-            <div class="firework-cruise">
+            <div class="firework-program">
               <p class="back-opacity-info black slide-l delay">たくさんの花火に囲まれて、幸せなひと時を。</p>
             </div>
             <div class="cruise-img image slide-r"></div>
@@ -123,17 +123,18 @@
       <div class="section-title text-align">アクセス<div class="border"></div></div><p class="english-title text-align">Access</p>
       <div class="align-items content">
         <div class="pc image slide-l">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26341.323294494607!2d133.52070822079108!3d34.384429219922986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35516dbe396e07d5%3A0x701e85394f296eb4!2z5YyX5pyo5bO2!5e0!3m2!1sja!2sjp!4v1629456458311!5m2!1sja!2sjp" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26341.323294494607!2d133.52070822079108!3d34.384429219922986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35516dbe396e07d5%3A0x701e85394f296eb4!2z5YyX5pyo5bO2!5e0!3m2!1sja!2sjp!4v1629456458311!5m2!1sja!2sjp" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <div class="sp image slide-l">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26341.323294494607!2d133.52070822079108!3d34.384429219922986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35516dbe396e07d5%3A0x701e85394f296eb4!2z5YyX5pyo5bO2!5e0!3m2!1sja!2sjp!4v1629456458311!5m2!1sja!2sjp" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-        <div class="pc firework-access slide-r delay">
+        <div class="pc firework-access firework-program slide-r delay">
           <div class="access-address">
             <span class="address">〒714-0301<br>岡山県笠岡市北木島星駆町◯◯-◯</span><br><br>
             会場周辺には駐車場もご用意しております（80台)<br>
           </div>
-          <p><a class="more button" href="#">詳しくはこちら</a></p>
+          <!-- <p><a class="more button" href="#">詳しくはこちら</a></p> -->
+          <div class="ferry-more-button text-align"><a class="more button" href="#">詳しくはこちら</a></div>
         </div>
         <div class="sp firework-access text-align slide-r delay">
           <div class="address">
@@ -150,26 +151,26 @@
           <div class="ferry-info"><img src="images/ferry.png" alt="フェリー" title="伏越港" width="100%"></div>
           <div class="pc ferry-info">
             <span class="ferry-name">①金風呂丸</span><br>
-            　往路　17:00発 → 18:10着<br>
-            　復路　22:00発 → 23:10着<br>
+            　往路　17:00発<br>
+            　復路　22:00発<br>
             （所要時間：約47～70分／料金：550円）<br>
             <br>
             <span class="ferry-name">②大福丸</span><br>
-            　往路　18:00発 → 18:45着<br>
-            　復路　21:30発 → 22:15着<br>
+            　往路　18:00発<br>
+            　復路　21:30発<br>
             　(所要時間：約45分／料金：520円）<br>
           </div>
           <div class="sp ferry-info">
             <span class="ferry-name">①金風呂丸</span><br>
-              往路　17:00発 → 18:10着<br>
-              復路　22:00発 → 23:10着<br>
+              往路　17:00発<br>
+              復路　22:00発<br>
             <span class="timemoney">
               所要時間：約47～70分<br>
               料金：550円<br>
             </span><br>
             <span class="ferry-name">②大福丸</span><br>
-              往路　18:00発 → 18:45着<br>
-              復路　21:30発 → 22:15着<br>
+              往路　18:00発<br>
+              復路　21:30発<br>
             <span class="timemoney">
               所要時間：約45分<br>
               料金：520円<br>
@@ -180,10 +181,8 @@
           <div class="ferry-info"><img src="images/ferry2.png" alt="旅客船" title="住吉港" width="100%"></div>
           <div class="pc ferry-info">
             <span class="ferry-name">三洋汽船</span><br>
-            　往路　17:30発 → 18:10着<br>
-            　復路　<span class="red">※</span>花火大会終了後はありません。<br>
-              　　　 　 フェリーをご利用頂くか、<br>
-              　　　 　 宿泊施設をご利用ください。<br>
+            　往路　17:30発<br>
+            　復路　<span class="red">※</span>フェリーをご利用ください。<br>
               　(所要時間：約55分／料金：800円）<br>
             <br>
           </div>
@@ -202,10 +201,10 @@
       </div>
     </section>
     <!-- manners -->
-    <section id="manners" class="section-b">
+    <section id="manners">
       <div class="section-title text-align">観覧時のお願い<div class="border"></div></div><p class="english-title text-align">Manners</p>
       <div class="manners align-items content">
-        <div class="virus slide-l"><img src="images/manners-mask.png" alt="ウイルス感染予防のお願い" title="観覧時のお願い" width="100%"></div>
+        <div class="pc virus slide-l"><img src="images/manners-mask.png" alt="ウイルス感染予防のお願い" title="観覧時のお願い" width="100%"></div>
         <div class="firework-program slide-r delay">
           新型コロナウイルスの感染予防対策に伴い、ご来場いただいた方々全員に本大会を楽しんでいただけるよう、実施委員会からお願いがございます。
           <p class="ferry-more-button text-align"><a class="more button" href="#">詳しくはこちら</a></p>
@@ -213,7 +212,7 @@
       </div>
     </section>
     <!-- tourism -->
-    <section id="tourism" class="section-b">
+    <section id="tourism">
       <div class="section-title text-align">観光情報<div class="border"></div></div><p class="english-title text-align">Tourism</p>
       <div class="align-items content-reverse">
         <div class=" slide-l delay">
@@ -224,7 +223,7 @@
     </section>
     <!-- information -->
     <div id="information" class="back-opacity pc">
-      <div class="align-items info-size flex justify-content">
+      <div class="align-items info-size content">
         <div class="info-p">
           <span>
             星駆町の花火 / クルーズ　/ アクセス　/ 観覧時のお願い / 観光情報<br><br>
