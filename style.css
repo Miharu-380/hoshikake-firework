@@ -437,19 +437,6 @@ footer p {
 }
 
 
-/* @media screen and (max-width: 1025px) {
-  section {
-    margin: 50px 5% 100px;
-  }
-  .pc {
-    display: none;
-  }
-  .sp {
-    display: block;
-  }
-} */
-
-
 @media screen and (max-width: 1024px) {
   .pc {
     display: none;
@@ -625,6 +612,11 @@ footer p {
   #information {
     padding-right: 5%;
     padding-left: 5%;
+    height: auto;
+  }
+  .info-size {
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
   .info-logo {
     display: flex;
