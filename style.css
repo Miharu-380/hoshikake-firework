@@ -247,9 +247,9 @@ footer p {
 .logo {
   display: block;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -40%);
+  transform: translate(-50%, -50%);
 }
 .slide {
   position: relative;
