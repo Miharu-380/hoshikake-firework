@@ -74,21 +74,15 @@ footer p {
 .sp {
   display: none;
 }
-.flex {
-  display: flex;
-}
-.block {
-  display: block;
-}
-.cancel {
-  font-size: 0.9rem;
-}
 /* position */
 .position-relative {
   position: relative;
 }
 .justify-content {
   justify-content: space-between;
+}
+.flex {
+  display: flex;
 }
 .text-align {
   text-align: center;
@@ -128,6 +122,9 @@ footer p {
   margin-bottom: 50px;
   font-size: .9rem;
 }
+.firework-program {
+  width: 40%;
+}
 .image {
   background-position: center;
   background-size: cover;
@@ -138,6 +135,9 @@ footer p {
 }
 .red {
   color: red;
+}
+.cancel {
+  font-size: 0.9rem;
 }
 /* button */
 .more {
@@ -247,9 +247,9 @@ footer p {
 .logo {
   display: block;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -40%);
+  transform: translate(-50%, -50%);
 }
 .slide {
   position: relative;
@@ -346,7 +346,7 @@ footer p {
 .menu-img {
   background-image: url(images/menu-firework.jpg);
 }
-.firework-program {
+.firework-content {
   width: 40%;
 }
 /* cruise */
@@ -366,7 +366,7 @@ footer p {
 }
 .cruise-more {
   margin: 60px auto;
-  padding: 60px 60px 70px;
+  padding: 60px 60px 80px;
 }
 .cruise-title {
   font-size: 1.2rem;
@@ -390,12 +390,8 @@ footer p {
 .access-address{
   margin-bottom: 60px;
 }
-.ferry-more {
-  padding: 60px;
-  margin: 40px auto;
-}
 .ferry-title {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom: 50px;
 }
 .access-menu-t {
@@ -441,8 +437,7 @@ footer p {
 }
 
 
-@media screen and (max-width: 599px) {
-
+@media screen and (max-width: 1024px) {
   .pc {
     display: none;
   }
@@ -462,6 +457,9 @@ footer p {
     flex-wrap: wrap-reverse;
     justify-content: center;
   }
+  .firework-program {
+    width: 100%;
+  }
   .image {
     width: 100%;
     height: 30vh;
@@ -474,7 +472,6 @@ footer p {
     width: 80%;
     margin: 0 auto;
   }
-
   /* header */
   .sp-logo {
     display: block;
@@ -485,7 +482,6 @@ footer p {
     left: 50%;
     transform: translate(-50%, -40%);
   }
-
   /* ハンバーガーメニュー */
   .menu-trigger {
     display: inline-block;
@@ -552,7 +548,6 @@ footer p {
   ul {
     list-style: none;
   }
-
   /* new */
   .article li {
     flex-wrap: wrap;
@@ -561,12 +556,10 @@ footer p {
     margin-left: 0;
     margin-right: 0;
   }
-
   /* program */
-  .firework-program {
-    width: 100%;
+  .firework-content {
+    width: auto;
   }
-
   /* cruise */
   .firework-cruise {
     width: 100%;
@@ -576,11 +569,11 @@ footer p {
   }
   .cruise-more {
     padding: 40px;
+    padding: 40px 40px 60px;
   }
   .cruise-title {
     line-height: 2rem;
   }
-
   /* access */
   .firework-access {
     margin-bottom: 20px;
@@ -593,6 +586,9 @@ footer p {
   .ferry-info {
     margin-bottom: 20px;
   }
+  .adjacent {
+    margin-left: 30px;
+  }
   .timemoney {
     font-size: 0.9rem;
   }
@@ -603,28 +599,34 @@ footer p {
   .access-menu-t {
     margin-bottom: 20px;
   }
-
   /* manners */
   .virus {
     margin-bottom: 20px;
+    width: 100%;
   }
-  .section-b {
-    margin: 50px 5% 100px;
-  }
-
   /* tourism */
   .tourism {
     margin-bottom: 20px;
   }
-
   /* information */
   #information {
     padding-right: 5%;
     padding-left: 5%;
+    height: auto;
+  }
+  .info-size {
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
   .info-logo {
     display: flex;
     justify-content: space-between;
   }
+}
 
+
+@media screen and (max-width: 599px) {
+  .adjacent {
+    margin-left: 0;
+  }
 }
